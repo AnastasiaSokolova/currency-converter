@@ -1,0 +1,42 @@
+$primary-color: #3498db; // Blue color for focus border
+$border-color: #ccc; // Default border color
+$border-radius: 8px; // Rounded corners
+$input-padding: 12px 16px; // Padding inside the input field
+$transition-speed: 0.3s; // Smooth transition for focus
+
+.input {
+  padding: $input-padding;
+  font-size: 16px;
+  border: 2px solid $border-color;
+  border-radius: $border-radius;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  transition: border-color $transition-speed, box-shadow $transition-speed;
+  width: 264px;
+
+  &::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 8px rgba($primary-color, 0.3);
+  }
+
+  &:hover {
+    border-color: darken($border-color, 10%);
+  }
+
+  &:disabled {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    cursor: not-allowed;
+  }
+}
+
+.inputLabel {
+  display: block;
+  padding-bottom: 5px;
+}

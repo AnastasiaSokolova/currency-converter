@@ -1,0 +1,45 @@
+.content {
+  background-color: #f2f2f2;
+  padding: 20px;
+  min-height: 600px;
+  height: 100%;
+
+  img {
+    width: 30px;
+    cursor: pointer;
+    margin-top: 24px;
+  }
+}
+
+.inputs,
+.selects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selects {
+  margin: 50px 0;
+}
+
+.inputs {
+  span {
+    margin-top: 20px;
+  }
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 10px 10px 0;
+
+  div {
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-weight: bold;
+    color: #0073e6;
+  }
+}
